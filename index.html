@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>STUDENT  ENROLLMENT  FORM</h1>
+        <div class="container">
+            <img src="reg.jpg"alt="">
+            <div class="form">
+                <h2 style="color: #3786bd;">ENROLLMENT FORM</h2>
+                <form>
+                    <div class="f_name">
+                        <label for="f_name">FIRST NAME: </label>
+                        <input type="text" id="f_name" placeholder="Ex: Kevin" required>
+                    </div>
+                    <div class="l_name">
+                        <label for="l_name">LAST NAME: </label>
+                        <input type="text" id="l_name" placeholder="Ex: Fernendez" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">GENDER: </label>
+                        <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                        <input type="radio" name="male-female" id="female" value="Female">Female
+                    </div>
+                    
+                    <div class="phn">
+                        <label for="phn">CONTACT NUMBER: </label>
+                        <input type="number" id="phn" placeholder="Ex: 8500123945" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">EMAIL: </label>
+                        <input type="email" id="email" placeholder="Ex: abc@gmail.com" required>
+                    </div>
+                    
+                    <div class="image">
+                        <label for="url">IMAGE URL: <span>(jpg,jpeg,png format)</span></label>
+                        <input type="url" id="url" placeholder="Ex. https://abc.jpg"
+                        value="https://th.bing.com/th/id/OIP.Zjz1IHPC-H4BBICZ8H8V5AHaHa?pid=ImgDet&rs=1"required>
+                            
+                    </div>
+                    <div class="website">
+                        <label for="website">WEBSITE: </label>
+                        <input type="url" id="website" placeholder="Ex. www.xyz.com" required>
+                    </div>
+                    
+                    <div class="skills">
+                        <label for="skills">SKILLS: </label>
+                        
+                        <input type="checkbox" value="PYTHON" id="cpp" class="checkbox" checked>PYTHON
+                        <input type="checkbox" value="JAVA" id="c" class="checkbox">JAVA
+                        <input type="checkbox" value="WEB DEVELOPMENT" id="html" class="checkbox">WEB DEVELOPMENT
+                        <input type="checkbox" value="ANDROID DEVELOPMENT" id="css" class="checkbox">ANDROID DEVELOPMENT
+                        <input type="checkbox" value="MACHINE LEARNING " id="css" class="checkbox">MACHINE LEARNING 
+                    </div>
+                    <div class="button">
+                        <button type="button" id="submit">SUBMIT</button>
+                        <button type="reset" id="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="output">
+                <h2 style="color: #ffffff;">STUDENT DETAILS</h2>
+                <br>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
